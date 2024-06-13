@@ -1,0 +1,141 @@
+.star-rating i {
+    display: inline-block;
+    cursor: pointer;
+    color: #454545;
+    font-size: 20px; 
+    margin-right: 5px; /* Fügt Abstand zwischen den Sternen hinzu */
+    text-shadow: #FC0 1px 0 5px;
+}
+
+.star-rating i.active {
+    color: #ffc107; 
+}
+.star {
+    display: inline-block;
+    cursor: pointer;
+    color: #454545;
+    font-size: 24px; 
+    text-shadow: #FC0 1px 0 10px;
+    margin-right: 5px; /* Fügt Abstand zwischen den Sternen hinzu */
+}
+
+.star.active {
+    color: #ffc107; 
+}
+
+.star-rating {
+    position: absolute;
+    bottom: 10px; /* Positioniert die Sterne 10px vom unteren Rand der Karte entfernt */
+    left: 20px; /* Positioniert die Sterne 10px vom linken Rand der Karte entfernt */
+    opacity: 0; /* Macht die Sterne unsichtbar */
+    transition: opacity 0.3s ease;
+    display: flex; /* Setzt die Anzeige auf Flexbox */
+    flex-direction: row; /* Ordnet die Sterne horizontal an */
+    justify-content: center; /* Zentriert die Sterne horizontal */
+    align-items: center; /* Zentriert die Sterne vertikal */
+}
+
+.card:hover .star-rating {
+    opacity: 1; /* Macht die Sterne sichtbar beim Hovern */
+}
+
+.card {
+    width: 400px;
+    height: 260px;
+    left: 41px;
+    border-radius: 10px;
+    box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.2), 0 0px 24px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    
+    
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Fügt Übergangseffekte für Skalierung und Verschwommenheit hinzu */
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+
+.title-container {
+    text-align: center; /* Zentriert die Überschrift */
+    margin-bottom: 20px; /* Fügt einen Abstand unten hinzu, um Platz zwischen der Überschrift und dem Grid zu schaffen */
+}
+
+.card-picture {
+    
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.3s ease-in-out; /* Fügt eine sanfte Übergangseffekt beim Verschwimmen hinzu */
+}
+
+.card-title {
+    position: absolute;
+    top: 10px; /* Positioniert den Titel 10px vom oberen Rand der Karte entfernt */
+    left: 10px; /* Positioniert den Titel 10px vom linken Rand der Karte entfernt */
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    opacity: 0; /* Macht den Titel unsichtbar */
+    transition: opacity 0.3s ease-in-out; /* Fügt eine sanfte Übergangseffekt beim Erscheinen hinzu */
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    
+}
+
+.card:hover .card-title {
+    opacity: 1; /* Macht den Titel sichtbar beim Hovern */
+}
+
+.card-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 160px;
+    display: flex;
+    gap: 10px; /* Abstand zwischen den Buttons */
+    opacity: 0; /* Macht die Buttons unsichtbar */
+    height: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Gelber Hintergrund */
+    color: #fff; /* Weißer Text */
+    border: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    line-height: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: -7.1px; /* Negative margin to move the button up */
+}
+.card:hover .card-buttons {
+    opacity: 1; /* Macht die Buttons sichtbar beim Hovern */
+}
+
+.send-button:hover {
+    background-color: #e0a800; /* Hellgelber Hintergrund beim Hovern */
+}
+
+.btn-success {
+    background-color: #28a745; /* Grüner Hintergrund */
+    color: #fff; /* Weißer Text */
+    border: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    line-height: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.route-button:hover {
+    background-color: #218838; /* Dunkler grüner Hintergrund beim Hovern */
+}
+
+
+
+

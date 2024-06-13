@@ -1,0 +1,45 @@
+/* Allgemeine Stile */
+body {
+    padding-top: 50px; 
+    background-color:rgb(255, 255, 255) ;
+    
+    
+}
+
+.navbar-custom {
+    background-color: #3a8d45;
+}
+
+.navbar-custom .navbar-brand img {
+    height: 40px; 
+}
+
+.footer-custom {
+    background-color: #3a8d45;
+    color: white;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+}
+/* Weitere spezifische Stile */
+.slim-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.green-heading {
+    color: #3a8d45;
+}
+.hotspot-image {
+    width: 250px; /* Bild nimmt die volle Breite der Box ein */
+    height: 250px;
+    object-fit: cover; /* Stellt sicher, dass das Bild abgeschnitten wird, wenn es nicht genau das Seitenverhältnis hat */
+  }
+
+
+
+
+
+
+
+
