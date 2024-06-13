@@ -20,6 +20,7 @@ CREATE TABLE SterneBewertungen (
     RESTAURANT_ID INT NOT NULL,
     STERNE INT NOT NULL,
     USER_BEWERTUNG VARCHAR(255),
+    FOREIGN KEY (USER_BEWERTUNG) REFERENCES Benutzerdaten(EMAIL),
     FOREIGN KEY (RESTAURANT_ID) REFERENCES Restaurants(id)
 );
 
@@ -76,8 +77,7 @@ INSERT INTO Support (EMAIL, Titel, supporttext) VALUES
 ('dwojtasik@student.tgm.ac.at', 'Probleme mit dem Login', 'Ich habe ein Problem mit meinem Account.');
 
 INSERT INTO SterneBewertungen(BEWERTUNGS_ID, RESTAURANT_ID, STERNE, USER_BEWERTUNG) VALUES
-(1,6,3, 'dwojtasik@student.tgm.ac.at'),
-(2,7,5,'eyueksel@student.tgm.ac.at');
+(1,6,3, 'dwojtasik@student.tgm.ac.at');
 
 
 #CREATE USER "Edan"@"%" IDENTIFIED BY "erendaniel";
